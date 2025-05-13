@@ -8,7 +8,7 @@ import (
 
 
 func main(){
-	err := config.LoadConfig()
+	err := config.LoadConfigFromEnv()
 	if err != nil {
 		return
 	}

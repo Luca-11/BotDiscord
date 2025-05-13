@@ -15,6 +15,8 @@ WORKDIR /src
 
 ENV TOKEN=""
 ENV BOT_PREFIX=""
+ENV POSTGRES_DB=""
+ENV POSTGRES_PASSWORD=""
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /go/pkg/mod/ to speed up subsequent builds.
