@@ -44,5 +44,14 @@ func LoadConfig() error{
 
 }
 
+func LoadConfigFromEnv() error {
+
+	Token = os.Getenv("TOKEN")
+	BotPrefix = os.Getenv("BOT_PREFIX")
+
+	return nil
+
+}
+
 
 
